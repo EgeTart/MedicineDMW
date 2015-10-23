@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="HeaderView" customModule="DWM" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="304" height="40"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="rightArrow" translatesAutoresizingMaskIntoConstraints="NO" id="yHP-Wx-7Ar">
+                    <rect key="frame" x="276" y="8" width="25" height="25"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="25" id="jSf-00-SHx"/>
+                    </constraints>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1JA-Nt-TTE">
+                    <rect key="frame" x="227" y="0.0" width="77" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="77" id="I5e-bf-8E0"/>
+                    </constraints>
+                    <inset key="contentEdgeInsets" minX="0.0" minY="2" maxX="0.0" maxY="0.0"/>
+                    <state key="normal" title="更多">
+                        <color key="titleColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="会议更新" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="45K-jQ-Skf">
+                    <rect key="frame" x="8" y="10" width="64" height="20"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="64" id="uxK-h7-fsp"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <color key="textColor" red="0.48627450980392156" green="0.7803921568627451" blue="0.2627450980392157" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="yHP-Wx-7Ar" secondAttribute="bottom" constant="7" id="Esd-Jf-gnv"/>
+                <constraint firstItem="45K-jQ-Skf" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="10" id="LZK-ab-iop"/>
+                <constraint firstAttribute="trailing" secondItem="yHP-Wx-7Ar" secondAttribute="trailing" constant="3" id="Mfn-rf-Nn9"/>
+                <constraint firstItem="1JA-Nt-TTE" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="RQs-VI-f2U"/>
+                <constraint firstItem="yHP-Wx-7Ar" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="8" id="S0L-ti-PPd"/>
+                <constraint firstAttribute="trailing" secondItem="1JA-Nt-TTE" secondAttribute="trailing" id="SM2-Yq-Cjk"/>
+                <constraint firstAttribute="bottom" secondItem="45K-jQ-Skf" secondAttribute="bottom" constant="10" id="jSN-sq-w3F"/>
+                <constraint firstItem="45K-jQ-Skf" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="juQ-TD-g5t"/>
+                <constraint firstAttribute="bottom" secondItem="1JA-Nt-TTE" secondAttribute="bottom" id="yKx-Vu-Hku"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="moreButton" destination="1JA-Nt-TTE" id="dot-VF-FPC"/>
+            </connections>
+        </view>
+    </objects>
+    <resources>
+        <image name="rightArrow" width="40" height="40"/>
+    </resources>
+</document>

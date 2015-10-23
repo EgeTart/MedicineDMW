@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="SectionHeaderView" customModule="DWM" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="expand" translatesAutoresizingMaskIntoConstraints="NO" id="yEM-ZJ-eNM">
+                    <rect key="frame" x="8" y="5" width="40" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="40" id="CHH-uE-das"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="心血管系统" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uYm-Pe-PQQ">
+                    <rect key="frame" x="56" y="8" width="256" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="wjG-1O-rTQ"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" weight="light" pointSize="16"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="抗心力衰竭和心率失常" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vjJ-R6-NeG">
+                    <rect key="frame" x="56" y="29" width="256" height="16"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nj8-WZ-Z66">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+                </button>
+            </subviews>
+            <constraints>
+                <constraint firstItem="vjJ-R6-NeG" firstAttribute="top" secondItem="uYm-Pe-PQQ" secondAttribute="bottom" id="126-1W-d4i"/>
+                <constraint firstAttribute="trailing" secondItem="nj8-WZ-Z66" secondAttribute="trailing" id="Fq6-Yl-AdM"/>
+                <constraint firstItem="yEM-ZJ-eNM" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="5" id="IzV-fi-KJs"/>
+                <constraint firstItem="nj8-WZ-Z66" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="KpG-Jz-oQl"/>
+                <constraint firstItem="yEM-ZJ-eNM" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="Nub-vd-qEX"/>
+                <constraint firstItem="vjJ-R6-NeG" firstAttribute="leading" secondItem="yEM-ZJ-eNM" secondAttribute="trailing" constant="8" id="OZn-8W-DYO"/>
+                <constraint firstAttribute="bottom" secondItem="nj8-WZ-Z66" secondAttribute="bottom" id="Rc6-aL-9ME"/>
+                <constraint firstAttribute="trailing" secondItem="vjJ-R6-NeG" secondAttribute="trailing" constant="8" id="Znp-Dn-W5Y"/>
+                <constraint firstAttribute="bottom" secondItem="vjJ-R6-NeG" secondAttribute="bottom" constant="5" id="ckM-xc-ZWg"/>
+                <constraint firstItem="uYm-Pe-PQQ" firstAttribute="leading" secondItem="yEM-ZJ-eNM" secondAttribute="trailing" constant="8" id="jzN-F9-ADG"/>
+                <constraint firstItem="nj8-WZ-Z66" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="olC-Xt-w6X"/>
+                <constraint firstAttribute="trailing" secondItem="uYm-Pe-PQQ" secondAttribute="trailing" constant="8" id="rUg-dn-CKG"/>
+                <constraint firstAttribute="bottom" secondItem="yEM-ZJ-eNM" secondAttribute="bottom" constant="5" id="zgD-lz-5jK"/>
+                <constraint firstItem="uYm-Pe-PQQ" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="8" id="zhC-wG-w9H"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="secondLevelLabel" destination="uYm-Pe-PQQ" id="hSV-E2-wXI"/>
+                <outlet property="stateButton" destination="nj8-WZ-Z66" id="YY9-rf-Byw"/>
+                <outlet property="stateImage" destination="yEM-ZJ-eNM" id="v12-IN-bsT"/>
+                <outlet property="thirdLevelLabel" destination="vjJ-R6-NeG" id="93B-pZ-ecS"/>
+            </connections>
+        </view>
+    </objects>
+    <resources>
+        <image name="expand" width="40" height="40"/>
+    </resources>
+</document>

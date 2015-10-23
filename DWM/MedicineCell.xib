@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="medicineCell" rowHeight="40" id="KGk-i7-Jjw" customClass="MedicineCell" customModule="DWM" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="40"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="39.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="rightArrow" translatesAutoresizingMaskIntoConstraints="NO" id="Guu-iP-zhq">
+                        <rect key="frame" x="287" y="7" width="25" height="25"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="25" id="eTb-xZ-6bn"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Miy-HB-giu">
+                        <rect key="frame" x="56" y="9" width="223" height="21"/>
+                        <fontDescription key="fontDescription" type="system" weight="thin" pointSize="16"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Guu-iP-zhq" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="7" id="49d-R1-TLN"/>
+                    <constraint firstItem="Miy-HB-giu" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="56" id="5Fa-Yh-r2r"/>
+                    <constraint firstAttribute="bottom" secondItem="Miy-HB-giu" secondAttribute="bottom" constant="9" id="NSR-sD-1T8"/>
+                    <constraint firstItem="Miy-HB-giu" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="9" id="RUU-pz-Iz6"/>
+                    <constraint firstAttribute="trailing" secondItem="Guu-iP-zhq" secondAttribute="trailing" constant="8" id="d2m-Rj-ogc"/>
+                    <constraint firstItem="Guu-iP-zhq" firstAttribute="leading" secondItem="Miy-HB-giu" secondAttribute="trailing" constant="8" id="nBZ-ch-rfe"/>
+                    <constraint firstAttribute="bottom" secondItem="Guu-iP-zhq" secondAttribute="bottom" constant="7" id="op2-0b-EUp"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="medicineLabel" destination="Miy-HB-giu" id="Mlu-ze-xQO"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="rightArrow" width="40" height="40"/>
+    </resources>
+</document>

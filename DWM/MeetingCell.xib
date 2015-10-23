@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="meetingCell" id="KGk-i7-Jjw" customClass="MeetingCell" customModule="DWM" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="80"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="79"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="video" translatesAutoresizingMaskIntoConstraints="NO" id="EiL-MD-hfz">
+                        <rect key="frame" x="8" y="10" width="60" height="60"/>
+                        <animations/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="60" id="lZ0-xe-Mnc"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Psycaid 2015全球精神药物论坛开" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sDW-sf-cSI">
+                        <rect key="frame" x="76" y="10" width="236" height="48"/>
+                        <animations/>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <color key="textColor" red="0.33333333333333331" green="0.33333333333333331" blue="0.33333333333333331" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="2015-09-25" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mof-Qd-r3d">
+                        <rect key="frame" x="241" y="61" width="64" height="14"/>
+                        <animations/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="14" id="cr1-St-G9a"/>
+                            <constraint firstAttribute="width" constant="64" id="kbl-eb-Okx"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                        <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="正大天晴药业" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oee-bq-c7q">
+                        <rect key="frame" x="76" y="61" width="157" height="14"/>
+                        <animations/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="14" id="MMo-Uk-Xy6"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                        <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <animations/>
+                <constraints>
+                    <constraint firstItem="oee-bq-c7q" firstAttribute="top" secondItem="sDW-sf-cSI" secondAttribute="bottom" constant="3" id="3Co-Rg-0gG">
+                        <variation key="heightClass=regular-widthClass=compact" constant="2"/>
+                    </constraint>
+                    <constraint firstAttribute="trailing" secondItem="sDW-sf-cSI" secondAttribute="trailing" constant="8" id="CE0-YL-Mlc"/>
+                    <constraint firstItem="oee-bq-c7q" firstAttribute="leading" secondItem="EiL-MD-hfz" secondAttribute="trailing" constant="8" id="HzY-3v-cs2"/>
+                    <constraint firstItem="EiL-MD-hfz" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="L7j-Ie-DTc"/>
+                    <constraint firstAttribute="trailing" secondItem="mof-Qd-r3d" secondAttribute="trailing" constant="15" id="LZR-ww-2od"/>
+                    <constraint firstAttribute="bottom" secondItem="EiL-MD-hfz" secondAttribute="bottom" constant="9.5" id="ZGf-os-8ny"/>
+                    <constraint firstItem="sDW-sf-cSI" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="amB-qp-7pL">
+                        <variation key="heightClass=regular-widthClass=compact" constant="8"/>
+                    </constraint>
+                    <constraint firstItem="mof-Qd-r3d" firstAttribute="leading" secondItem="oee-bq-c7q" secondAttribute="trailing" constant="8" id="cGs-ou-8tf"/>
+                    <constraint firstItem="sDW-sf-cSI" firstAttribute="leading" secondItem="EiL-MD-hfz" secondAttribute="trailing" constant="8" id="esH-q4-Oxd"/>
+                    <constraint firstAttribute="bottom" secondItem="mof-Qd-r3d" secondAttribute="bottom" constant="5" id="nLf-Tl-oos">
+                        <variation key="heightClass=regular-widthClass=compact" constant="8"/>
+                    </constraint>
+                    <constraint firstAttribute="bottom" secondItem="oee-bq-c7q" secondAttribute="bottom" constant="5" id="oQ9-zf-BO2">
+                        <variation key="heightClass=regular-widthClass=compact" constant="8"/>
+                    </constraint>
+                    <constraint firstItem="EiL-MD-hfz" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="ppZ-lv-5lw"/>
+                </constraints>
+            </tableViewCellContentView>
+            <animations/>
+            <connections>
+                <outlet property="meetingImage" destination="EiL-MD-hfz" id="0pF-R1-KW0"/>
+            </connections>
+            <point key="canvasLocation" x="192" y="317"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="video" width="60" height="60"/>
+    </resources>
+</document>
