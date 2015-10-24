@@ -7,24 +7,17 @@
 //
 
 import UIKit
+import MJRefresh
 
 class EnterpriseListViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
-    
     @IBOutlet weak var enterpriseScrollView: UIScrollView!
-    
     @IBOutlet weak var foreginTableView: UITableView!
-    
     @IBOutlet weak var cooperateTableView: UITableView!
-    
     @IBOutlet weak var innerTableView: UITableView!
-    
     @IBOutlet weak var slideView: UIView!
-    
     @IBOutlet weak var foreginButton: UIButton!
-    
     @IBOutlet weak var cooperateButton: UIButton!
-    
     @IBOutlet weak var innerButton: UIButton!
     //特么列表怎么显示“最近浏览”
 //    let sectionIndex = ["#", "A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"]
@@ -36,7 +29,7 @@ class EnterpriseListViewController: UIViewController, UITableViewDataSource, UIT
     var foreginEnterprises: EnterpriseListData!
     var cooperateEnterprises: EnterpriseListData!
     var innerEnterprises: EnterpriseListData!
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -44,7 +37,6 @@ class EnterpriseListViewController: UIViewController, UITableViewDataSource, UIT
         cooperateEnterprises = EnterpriseListData(enterpriseType: "2")
         innerEnterprises = EnterpriseListData(enterpriseType: "0")
 
-        
         self.view.tintColor = UIColor(red: 168/255, green: 168/255, blue: 168/255, alpha: 1)
         
         self.innerButton.setTitleColor(UIColor(red: 168/255, green: 168/255, blue: 168/255, alpha: 1.0), forState: UIControlState.Normal)
@@ -91,6 +83,7 @@ class EnterpriseListViewController: UIViewController, UITableViewDataSource, UIT
         }
 
     }
+    
     
     func swipe(gesture: UISwipeGestureRecognizer) {
         
@@ -255,12 +248,6 @@ extension EnterpriseListViewController {
     
 }
 
-extension EnterpriseListViewController: UIScrollViewDelegate {
-    func scrollViewDidScroll(scrollView: UIScrollView) {
-        print(scrollView.contentOffset)
-    }
-    
-}
 
 
 

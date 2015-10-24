@@ -174,20 +174,9 @@ extension EnterpriseController: UITableViewDelegate {
     }
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        if indexPath.section == 1 && indexPath.row == 0 {
-            self.navigationController?.pushViewController(detailController, animated: true)
-            
-        } else if indexPath.section == 1 && indexPath.row == 1 {
-            self.performSegueWithIdentifier("meeting", sender: self)
-        } else if indexPath.section == 1 && indexPath.row == 2 {
-            self.navigationController?.pushViewController(MeetingController, animated: true)
-        }
+        //MARK: get medicins of enterprise
   
     }
-    
-    
-    
-    
-    
+
     
 }
