@@ -914,7 +914,9 @@
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="lTm-FH-jb3" secondAttribute="trailing" id="FjR-ah-sF4"/>
                             <constraint firstItem="KGa-UL-TTr" firstAttribute="top" secondItem="lTm-FH-jb3" secondAttribute="bottom" id="OZ2-HI-IIB"/>
-                            <constraint firstItem="lTm-FH-jb3" firstAttribute="top" secondItem="5J7-ft-jjh" secondAttribute="bottom" id="U5T-0W-dbD"/>
+                            <constraint firstItem="lTm-FH-jb3" firstAttribute="top" secondItem="5J7-ft-jjh" secondAttribute="bottom" id="U5T-0W-dbD">
+                                <variation key="heightClass=regular-widthClass=compact" constant="-64"/>
+                            </constraint>
                             <constraint firstItem="lTm-FH-jb3" firstAttribute="leading" secondItem="fcu-l1-JgK" secondAttribute="leading" id="dCE-6P-MIP"/>
                         </constraints>
                         <variation key="default">
