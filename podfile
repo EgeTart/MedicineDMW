@@ -5,3 +5,7 @@ use_frameworks!
 pod 'Alamofire', '~> 2.0'
 
 pod 'CryptoSwift'
+
+pod 'MJRefresh'
+
+pod 'SDWebImage'

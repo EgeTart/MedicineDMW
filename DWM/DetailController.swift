@@ -38,8 +38,8 @@ class DetailController: UIViewController {
         _navigationTableView.layer.shadowColor = UIColor(white: 000000, alpha: 0.3).CGColor
         _navigationTableView.layer.shadowOffset = CGSize(width: -6, height: 6)
         _navigationTableView.layer.shadowOpacity = 1
-        _navigationTableView.clipsToBounds = false
-        _navigationTableView.bounces = false
+        //_navigationTableView.clipsToBounds = false
+        _navigationTableView.bounces = true
         
         _navigationTableView.registerClass(UITableViewCell.self, forCellReuseIdentifier: "optionCell")
         return _navigationTableView
@@ -56,7 +56,6 @@ class DetailController: UIViewController {
         self.view.addSubview(navigationTableView)
         
         getMedicineDetail()
-        
         
         print(medicineID)
     }
@@ -171,7 +170,7 @@ extension DetailController: UITableViewDataSource {
         
         if (medicineCategory == 1) {
             
-            let fieldName = ["ADRS", "adult_dose", "content", "current_application", "dose_explain", "foreign_dose", "interaction", "manual", "name", "other_name", "pharmacokinetics", "pharmacolo", "pk_pd", "preparations", "warn"]
+            let fieldName = ["ADRS", "content", "current_application", "dose_explain", "interaction", "manual", "name", "other_name", "pharmacolo", "preparations", "warn"]
             
             while(results.next()) {
                 for field in fieldName {

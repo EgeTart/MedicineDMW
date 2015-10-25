@@ -37,8 +37,8 @@ class MedicineListController: UIViewController {
     
     var medicinesType = MedicineType()
     
-    var mordenMedicineLevels = MedicineLevel(parentTypeID: "1")
-    var tradictionMedicineLevels = MedicineLevel(parentTypeID: "12")
+    var mordenMedicineLevels = MedicineLevel(parentTypeID: "106")
+    var tradictionMedicineLevels = MedicineLevel(parentTypeID: "1")
     var mordenSubLevelMedicine = [Dictionary<String, String!>]()
     var tradictionSubLevelMedicine = [Dictionary<String, String!>]()
     
@@ -266,6 +266,7 @@ extension MedicineListController: UITableViewDelegate {
     
     func getSubLevelData(parentTypeID: String) {
         
+        print(medicineCategory)
         var subLevelMedicine = [Dictionary<String, String!>]()
         
         db.open()
